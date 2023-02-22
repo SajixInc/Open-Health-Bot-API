@@ -21,7 +21,7 @@ The OpenHealthBot APIs are designed to be easy to use, flexible, and scalable. T
 
 Here is an overview of the main APIs offered by OpenHealthBot:
 
- - Symptom Checker API - This API enables developers to integrate OpenHealthBot's symptom checker functionality into their applications, allowing users to input their symptoms and receive personalized recommendations for their next steps, such as self-care tips or recommendations for seeing a healthcare professional.
+ - Diabetes Assessment API - This API enables developers to integrate OpenHealthBot's Diabetes functionality into their applications. The API can provide information on Diabetes Assessment.
 
  - Depression Assessment API - This API enables developers to integrate OpenHealthBot's Depression functionality into their applications. The API can provide information on Depression Assessment.
 
@@ -30,8 +30,6 @@ Here is an overview of the main APIs offered by OpenHealthBot:
  - Health Information API - This API enables developers to integrate OpenHealthBot's vast database of health-related information into their applications, allowing users to search for and retrieve relevant health information, including symptoms, diagnoses, treatments, and preventive measures.
 
 Overall, OpenHealthBot's APIs provide a powerful set of tools for developers to integrate health-related features and functionalities into their applications and services, making it easier for users to access personalized health information and recommendations.
-
-## Documentation
 
 ## COWIN OPEN API's
 
