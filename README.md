@@ -4,6 +4,17 @@
 
 OpenHealthBot is a health chatbot designed to provide users with personalized health information and guidance. As an AI-powered chatbot, it leverages natural language processing (NLP) and machine learning to understand user questions and provide relevant answers. OpenHealthBot is designed to help users with a variety of health-related questions and concerns. It can provide information on symptoms, diagnoses, treatment options, and preventive measures for a wide range of health conditions. Additionally, OpenHealthBot can provide guidance on healthy lifestyle habits, such as nutrition, exercise, and stress management.
 
+<div align="center">
+  
+  <img src="https://img.shields.io/badge/Python-3.7-yellowgreen" />
+    
+  </div>
+  
+<div align="center">
+ <img  src="https://user-images.githubusercontent.com/97886638/220600771-c11ddaf8-8030-4fe5-b867-6bc2647eff64.png" />
+  
+</div>
+
 ## COWIN OPEN API's
 
 ### Introduction:
