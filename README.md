@@ -71,3 +71,7 @@ CoWIN Open APIs can be used for several use cases related to COVID-19 vaccinatio
  - Health Tracker: Developers can use CoWIN Open APIs to build applications that track the health status of vaccinated individuals and provide recommendations based on their vaccination history.
 
 In summary, CoWIN Open APIs can be used for several use cases related to COVID-19 vaccination in India, including vaccine center finder, appointment scheduling, data analysis, automated alerts, SMS notifications, and health tracking. Developers can use the APIs to build innovative applications and services that help fight the COVID-19 pandemic in India.
+
+<p align="center">
+<img src="https://vivifyassets.s3.ap-south-1.amazonaws.com/cropped-vivify_login.png" margin_left="100"/>
+</p>
