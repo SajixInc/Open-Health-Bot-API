@@ -1,7 +1,8 @@
 <img src="https://vivifyassets.s3.ap-south-1.amazonaws.com/lifeeazy-logo1.png" align="right" width="250"/> 
 
 # Open-Health-Bot-API
-Open Health Bot API's (for general purpose use related to Healthcare Info; which can be integrated in bot or any other application)
+
+OpenHealthBot is a health chatbot designed to provide users with personalized health information and guidance. As an AI-powered chatbot, it leverages natural language processing (NLP) and machine learning to understand user questions and provide relevant answers. OpenHealthBot is designed to help users with a variety of health-related questions and concerns. It can provide information on symptoms, diagnoses, treatment options, and preventive measures for a wide range of health conditions. Additionally, OpenHealthBot can provide guidance on healthy lifestyle habits, such as nutrition, exercise, and stress management.
 
 ## COWIN OPEN API's
 
