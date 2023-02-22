@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'drf_yasg',
-    'rest_framework_simplejwt',
     'openhealthapi',
 ]
 
@@ -54,15 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.AllowAny',),
 
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-
-    ],
-
-}
 
 SWAGGER_SETTINGS = {
 
@@ -77,24 +68,7 @@ SWAGGER_SETTINGS = {
     }
 }
 
-from datetime import timedelta
 
-SIMPLE_JWT = {
-    # how long the original token is valid for
-    'ACCESS_TOKEN_LIFETIME': timedelta(days=90),
-
-    # allow refreshing of tokens
-    'JWT_ALLOW_REFRESH': True,
-
-    # this is the maximum time AFTER the token was issued that
-    # it can be refreshed.  exprired tokens can't be refreshed.
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=90),
-}
-
-CORS_ALLOWED_ORIGINS = [
-    #'https://staging-api.vivifyhealthcare.com/',
-    'https://api.vivifyhealthcare.com/',
-]
 
 ROOT_URLCONF = 'openhealth.urls'
 
@@ -166,14 +140,11 @@ MEDIA_URL = '/ tmp /'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'tmp')
 
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-USE_X_FORWARDED_HOST = True
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 
 
 ## textlocal ##
-apikey='Please enter your Textlocal API Key'
+apikey='Here You Enter Your textlocal API Key'
