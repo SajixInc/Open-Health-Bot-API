@@ -1,8 +1,31 @@
 <img src="https://vivifyassets.s3.ap-south-1.amazonaws.com/lifeeazy-logo1.png" align="right" width="250"/> 
+<img src="https://user-images.githubusercontent.com/92524410/220310123-91c5a29e-03ad-4b13-aca7-e35f3eb5078d.png" width="100"/> 
+<div align="center">
+  <h1> Open-Health-Bot-API </h1>
+  
+</div>
 
-# Open-Health-Bot-API
+  
+ 
 
-OpenHealthBot is a health chatbot designed to provide users with personalized health information and guidance. As an AI-powered chatbot, it leverages natural language processing (NLP) and machine learning to understand user questions and provide relevant answers. OpenHealthBot is designed to help users with a variety of health-related questions and concerns. It can provide information on symptoms, diagnoses, treatment options, and preventive measures for a wide range of health conditions. Additionally, OpenHealthBot can provide guidance on healthy lifestyle habits, such as nutrition, exercise, and stress management.
+Why we created Open Health Bot?
+
+Open Health Bot has been envisioned to make healthcare information more accessable in most user friendly way.
+
+- Accessibility: Open Health Bots provide a convenient way for people to access healthcare information and support from their homes, workplaces or on-the-go.
+
+- Affordability: Open Health Bots has been kept open and free where people can have access to Healthcare Services and Information, making it affordable.
+
+- Efficiency: Open Health Bots can quickly provide users with basic health information and guidance, potentially reducing the need for unnecessary and unauthenticated data on the web.
+
+- Privacy: Open Health Bots allow users to obtain healthcare information without sharing their personal information or identity. However to keep it spam free and clean, user need to authenticate as a human. Any demographic information which has been aksed by the OHB is anonymous and required to provide relatively near to accurate information.
+
+- Personalization: Open Health Bots can be programmed to provide personalized recommendations and support based on the user's specific health concerns and needs.
+
+Overall, open health bots provide an innovative and effective way to deliver healthcare information and contributes to UNSDG's#3
+
+OpenHealthBot is designed to help users with a variety of health-related questions and concerns. It can provide information on symptoms, diagnoses, treatment options, and preventive measures for a wide range of health conditions. Additionally, OpenHealthBot can provide guidance on healthy lifestyle habits, such as nutrition, exercise, and stress management.
+
 
 <div align="center">
   
@@ -24,20 +47,29 @@ Here is an overview of the main APIs offered by OpenHealthBot:
  - LifeStyle Score Assessment API - This API enables developers to integrate OpenHealthBot's vast database of health-related information into their applications, allowing users to search for and retrieve relevant health information, including symptoms, diagnoses, treatments, and preventive measures.
  <div align="center">
  <img  src="https://user-images.githubusercontent.com/97886638/220821053-51c55048-56ee-4bd3-8cc9-ec7ad65a86a5.png" />
+ </div>
+ 
+    References: American Academy of Family Physicians
+    i. https://www.aafp.org/pubs/afp/issues/2022/0900/editorial-lifestyle-medicine.html
+    ii. https://www.aafp.org/dam/AAFP/documents/patient_care/lifestyle-medicine/lifestyle-medicine-guide.pdf
   
-</div>
 
  - Diabetes Assessment API - This API enables developers to integrate OpenHealthBot's Diabetes functionality into their applications. The API can provide information on Diabetes Assessment.
  <div align="center">
  <img  src="https://user-images.githubusercontent.com/97886638/220821423-33eb0743-438e-439d-98cf-4a97f90c637b.png" />
+ </div>
+ 
+     References: Diabities
+    i. https://www.aafp.org/pubs/afp/issues/2022/0900/editorial-lifestyle-medicine.html
   
-</div>
 
  - Depression Assessment API - This API enables developers to integrate OpenHealthBot's Depression functionality into their applications. The API can provide information on Depression Assessment.
  <div align="center">
  <img  src="https://user-images.githubusercontent.com/97886638/220821650-21e2e853-20b2-4079-9f63-f40a732f0388.png" />
-  
-</div>
+ </div>
+ 
+   References: Depression
+    i. https://www.aafp.org/pubs/afp/issues/2022/0900/editorial-lifestyle-medicine.html
 
 Overall, OpenHealthBot's APIs provide a powerful set of tools for developers to integrate health-related features and functionalities into their applications and services, making it easier for users to access personalized health information and recommendations.
 
@@ -116,3 +148,6 @@ Run
 <p align="center">
 <img src="https://vivifyassets.s3.ap-south-1.amazonaws.com/cropped-vivify_login.png" margin_left="100"/>
 </p>
+
+### These API's can be used along with the [Open Health Bot](https://github.com/vivifyhealthcare/Open-Health-Bot)
+
