@@ -96,6 +96,21 @@ To integrate CoWIN Open APIs in real-time and build third-party applications, de
  - Test and deploy the application: Developers need to test the application to ensure it works as expected. They can then deploy the application on a web server or a cloud platform to make it accessible to users.
 
 In summary, integrating CoWIN Open APIs in real-time and building third-party applications involves obtaining an API key, understanding the endpoints, making API requests, parsing the response, building the application, testing it, and deploying it. Developers need to follow best practices and ensure they comply with the rate limits to prevent their API key from being suspended.
+## Installation
+
+- Clone the project repository
+- Create an virtual environment and activate it 
+  ``` python -m venv <environment name> ```
+ - To activate this environment
+  ``` <environment name>/Scripts/activate ```
+ - After activating the environment go to the project folder where you can able to find ``` requirements.txt ``` and install the requirements.txt using
+  ``` pip install -r requirements.txt ```
+  so using requirements.txt you are installing packages that are required for this project
+  
+## Development server
+Run 
+``` python manage.py runserver ``` 
+  for a dev server. Navigate to ``` http://localhost:8000/ ``` . The app will automatically reload if you change any of the source files.
 
 
 <p align="center">
