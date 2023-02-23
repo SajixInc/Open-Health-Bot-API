@@ -59,17 +59,13 @@ Here is an overview of the main APIs offered by OpenHealthBot:
  <img  src="https://user-images.githubusercontent.com/97886638/220821423-33eb0743-438e-439d-98cf-4a97f90c637b.png" />
  </div>
  
-     References: Diabities
-    i. https://www.aafp.org/pubs/afp/issues/2022/0900/editorial-lifestyle-medicine.html
-  
+   
 
  - Depression Assessment API - This API enables developers to integrate OpenHealthBot's Depression functionality into their applications. The API can provide information on Depression Assessment.
  <div align="center">
  <img  src="https://user-images.githubusercontent.com/97886638/220821650-21e2e853-20b2-4079-9f63-f40a732f0388.png" />
  </div>
  
-   References: Depression
-    i. https://www.aafp.org/pubs/afp/issues/2022/0900/editorial-lifestyle-medicine.html
 
 Overall, OpenHealthBot's APIs provide a powerful set of tools for developers to integrate health-related features and functionalities into their applications and services, making it easier for users to access personalized health information and recommendations.
 
