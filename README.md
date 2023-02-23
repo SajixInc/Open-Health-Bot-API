@@ -21,17 +21,32 @@ The OpenHealthBot APIs are designed to be easy to use, flexible, and scalable. T
 
 Here is an overview of the main APIs offered by OpenHealthBot:
 
+ - LifeStyle Score Assessment API - This API enables developers to integrate OpenHealthBot's vast database of health-related information into their applications, allowing users to search for and retrieve relevant health information, including symptoms, diagnoses, treatments, and preventive measures.
+ <div align="center">
+ <img  src="https://user-images.githubusercontent.com/97886638/220821053-51c55048-56ee-4bd3-8cc9-ec7ad65a86a5.png" />
+  
+</div>
+
  - Diabetes Assessment API - This API enables developers to integrate OpenHealthBot's Diabetes functionality into their applications. The API can provide information on Diabetes Assessment.
+ <div align="center">
+ <img  src="https://user-images.githubusercontent.com/97886638/220821423-33eb0743-438e-439d-98cf-4a97f90c637b.png" />
+  
+</div>
 
  - Depression Assessment API - This API enables developers to integrate OpenHealthBot's Depression functionality into their applications. The API can provide information on Depression Assessment.
-
- - Treatment Recommendation API - This API enables developers to integrate OpenHealthBot's treatment recommendation functionality into their applications, allowing users to receive personalized recommendations for treatments based on their specific health conditions and circumstances.
-
- - Health Information API - This API enables developers to integrate OpenHealthBot's vast database of health-related information into their applications, allowing users to search for and retrieve relevant health information, including symptoms, diagnoses, treatments, and preventive measures.
+ <div align="center">
+ <img  src="https://user-images.githubusercontent.com/97886638/220821650-21e2e853-20b2-4079-9f63-f40a732f0388.png" />
+  
+</div>
 
 Overall, OpenHealthBot's APIs provide a powerful set of tools for developers to integrate health-related features and functionalities into their applications and services, making it easier for users to access personalized health information and recommendations.
 
 ## COWIN OPEN API's
+
+<div align="center">
+ <img  src="https://user-images.githubusercontent.com/97886638/220821957-f1027142-15e9-48e8-90c8-c828cb9f6b45.png" />
+  
+</div>
 
 ### Introduction:
 
@@ -82,23 +97,6 @@ To integrate CoWIN Open APIs in real-time and build third-party applications, de
 
 In summary, integrating CoWIN Open APIs in real-time and building third-party applications involves obtaining an API key, understanding the endpoints, making API requests, parsing the response, building the application, testing it, and deploying it. Developers need to follow best practices and ensure they comply with the rate limits to prevent their API key from being suspended.
 
-## Basic Use Cases of COWIN OPEN API'S
-
-CoWIN Open APIs can be used for several use cases related to COVID-19 vaccination in India. Here are some of the use cases of CoWIN Open APIs:
-
- - Vaccine Center Finder: CoWIN Open APIs provide real-time data on vaccine centers in India, including their location, availability, and other details. Developers can use this data to build applications that help users find nearby vaccine centers and schedule appointments.
-
- - Appointment Scheduling: Developers can use CoWIN Open APIs to build applications that allow users to schedule vaccine appointments at a preferred vaccine center. The applications can use the available capacity data to suggest suitable appointment slots.
-
- - Data Analysis: CoWIN Open APIs provide real-time data on COVID-19 vaccination in India, including the number of doses administered, the number of people vaccinated, and other details. Developers can use this data to build applications that analyze vaccination trends and help authorities make informed decisions.
-
- - Automated Alerts: Developers can use CoWIN Open APIs to build applications that provide automated alerts to users when new vaccine centers are added in their area or when new appointments become available at a preferred vaccine center.
-
- - SMS Notifications: CoWIN Open APIs provide real-time data on vaccine appointments, including confirmation and cancellation details. Developers can use this data to send SMS notifications to users regarding their appointments.
-
- - Health Tracker: Developers can use CoWIN Open APIs to build applications that track the health status of vaccinated individuals and provide recommendations based on their vaccination history.
-
-In summary, CoWIN Open APIs can be used for several use cases related to COVID-19 vaccination in India, including vaccine center finder, appointment scheduling, data analysis, automated alerts, SMS notifications, and health tracking. Developers can use the APIs to build innovative applications and services that help fight the COVID-19 pandemic in India.
 
 <p align="center">
 <img src="https://vivifyassets.s3.ap-south-1.amazonaws.com/cropped-vivify_login.png" margin_left="100"/>
