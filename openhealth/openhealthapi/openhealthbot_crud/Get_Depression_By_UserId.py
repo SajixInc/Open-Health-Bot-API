@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from genericresponse import GenericResponse
 from ..serializers import GetOpenhealthDepressionSerializer,GetQuestionDepressionSerializer
-from ..models import OpenhealthDepressionAssessment
+from ..models import OpenhealthDepressionAssessment,QuestionDepressionTableV2
 from errormessage import Errormessage
 
 
@@ -21,9 +21,9 @@ class OpenHealthDepressionByUserId(APIView):
 
         try:
             result = OpenhealthDepressionAssessment.objects.filter(UserId_id=UserId)
-            Question = apps.get_model('user_assessment', 'QuestionDepressionTableV2')
+            # Question = apps.get_model('user_assessment', 'QuestionDepressionTableV2')
             if OpenhealthDepressionAssessment.objects.filter(UserId_id=UserId):
-                x = Question.objects.all()
+                x = QuestionDepressionTableV2.objects.all()
                 count = []
                 dq = GetQuestionDepressionSerializer(x, many=True)
                 life = GetOpenhealthDepressionSerializer(result, many=True)
@@ -57,7 +57,7 @@ class OpenHealthDepressionByUserId(APIView):
                 return Response(json.loads(jsonStr), status=200)
 
             else:
-                x = Question.objects.all()
+                x = QuestionDepressionTableV2.objects.all()
                 dq = GetQuestionDepressionSerializer(x, many=True)
                 data= []
                 for i in dq.data:
@@ -70,7 +70,7 @@ class OpenHealthDepressionByUserId(APIView):
                 response.HasError = False
                 jsonStr = json.dumps(response.__dict__)
                 return Response(json.loads(jsonStr), status=200)
-        except Question.DoesNotExist as e:
+        except QuestionDepressionTableV2.DoesNotExist as e:
             response = GenericResponse("Message", "Resul t", "Status", "HasError")
             response.Message = Errormessage(e)
             response.Result = False

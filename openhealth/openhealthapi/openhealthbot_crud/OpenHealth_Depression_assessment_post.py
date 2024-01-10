@@ -6,7 +6,7 @@ from genericresponse import GenericResponse
 from ..serializers import OpenHealthDepressionSerializer, GetOpenhealthDepressionSerializer
 from errormessage import Errormessage
 
-from ..models import OpenhealthInteractionModel, OpenhealthDepressionAssessment
+from ..models import OpenhealthInteractionModel, OpenhealthDepressionAssessment, QuestionDepressionTableV2
 # from user_assessment.models import QuestionLifestyleScoresTableV2
 import logging, traceback
 
@@ -23,10 +23,10 @@ class OpenHealthDepressionPostAPI(generics.GenericAPIView):
         (Table_Name:'Openhealth_Depression_Assessment_table')"""
         try:
             question = request.data.get('QuestionId')
-            QuestionDepressionTable = apps.get_model('user_assessment', 'QuestionDepressionTableV2')
+            # QuestionDepressionTable = apps.get_model('user_assessment', 'QuestionDepressionTableV2')
             Interactionid = request.data.get('InteractionId')
             Category=request.data.get('Category')
-            data = QuestionDepressionTable.objects.get(id=question)
+            data = QuestionDepressionTableV2.objects.get(id=question)
             sub_category=data.Sub_category
             if Category == sub_category:
                 user = request.data.get('UserId')

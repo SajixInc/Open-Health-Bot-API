@@ -26,4 +26,7 @@ urlpatterns =[
     path('GetOpenhealthIntractionUserId/<int:UserId>/',OpenHealthIntractionByUserId.as_view(), name = 'Get Open health intraction by UserId'),
     path('OpenHealthDiabetesByUserId/<int:UserId>/',OpenHealthDiabetesByUserId.as_view(), name='Get Open Health Diabete by User id'),
     path('OpenHealthAssessmentByUserId/<int:UserId>/',GetOpenhealthBotAssessmentView.as_view(), name='Get Open Health bot assessment by user id'),
+    path('GetAllQuestionsLifeStyleScoringV2/',GetAllQuestionsLifeStyleScoringV2.as_view(), name='GetAllQuestionsLifeStyleScoringV2'),
+    path('GetAllQuestionsDepressionV2/',GetAllQuestionsDepressionV2.as_view(), name='GetAllQuestionsDepressionV2'),
+    path('GetAllQuestionsDiabetesV2/',GetAllQuestionsDiabetesV2.as_view(), name='GetAllQuestionsDiabetesV2'),
 ]

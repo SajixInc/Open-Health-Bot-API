@@ -6,7 +6,7 @@ from genericresponse import GenericResponse
 from ..serializers import OpenHealthLisestyleScoringSerializer,GetOpenHealthLifestyleScoringSerializer
 from errormessage import Errormessage
 
-from ..models import OpenhealthInteractionModel, OpenhealthLifestyleAssessment
+from ..models import OpenhealthInteractionModel, OpenhealthLifestyleAssessment, QuestionLifestyleScoresTableV2
 # from user_assessment.models import QuestionLifestyleScoresTableV2
 import logging, traceback
 
@@ -23,14 +23,15 @@ class OpenHealthLifestyleScorePostAPI(generics.GenericAPIView):
         (Table_Name:'Openhealth_Lifestyle_Assessment_table')"""
         try:
             question = request.data.get('QuestionId')
-            QuestionLifestyleScoresTable = apps.get_model('user_assessment', 'QuestionLifestyleScoresTableV2')
+            # QuestionLifestyleScoresTable = apps.get_model('user_assessment', 'QuestionLifestyleScoresTableV2')
             Interactionid = request.data.get('InteractionId')
             Sub_category=request.data.get('Sub_category')
             Category=request.data.get('Category')
-            data = QuestionLifestyleScoresTable.objects.get(id=question)
+            data = QuestionLifestyleScoresTableV2.objects.get(id=question)
             sub_category=data.Sub_category
             if Sub_category == sub_category:
                 user = request.data.get('UserId')
+                print(user,"user")
                 # try:
                     # a = 
                 if OpenhealthInteractionModel.objects.get(UserId_id=user, InteractionId=Interactionid,
