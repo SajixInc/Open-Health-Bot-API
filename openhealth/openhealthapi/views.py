@@ -19,6 +19,9 @@ from .openhealthbot_crud.Get_Depression_By_UserId import OpenHealthDepressionByU
 from .openhealthbot_crud.Get_Openhealth_Intraction import OpenHealthIntractionByUserId
 from .openhealthbot_crud.Get_Diabetes_By_Userid import OpenHealthDiabetesByUserId
 from .openhealthbot_crud.Get_openhealthbotAssessment import GetOpenhealthBotAssessmentView
+from .openhealthbot_crud.life_style_questions import GetAllQuestionsLifeStyleScoringV2
+from .openhealthbot_crud.get_all_questions_diabetes import GetAllQuestionsDiabetesV2
+from .openhealthbot_crud.get_all_questions_depression import GetAllQuestionsDepressionV2
 
 # Create your views here.
 otp_genaration()
@@ -41,3 +44,6 @@ OpenHealthDepressionByUserId()
 OpenHealthIntractionByUserId()
 OpenHealthDiabetesByUserId()
 GetOpenhealthBotAssessmentView()
+GetAllQuestionsLifeStyleScoringV2()
+GetAllQuestionsDiabetesV2()
+GetAllQuestionsDepressionV2()

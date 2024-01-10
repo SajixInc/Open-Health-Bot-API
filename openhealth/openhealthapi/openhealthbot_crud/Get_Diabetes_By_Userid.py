@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from genericresponse import GenericResponse
 from ..serializers import GetOpenhealthDiabetesSerializer,GetQuestionDiabetesSerializer
-from ..models import OpenhealthDiabetesAssessment
+from ..models import OpenhealthDiabetesAssessment, QuestionDiabetesTableV2
 from errormessage import Errormessage
 
 
@@ -22,9 +22,9 @@ class OpenHealthDiabetesByUserId(APIView):
 
         try:
             result = OpenhealthDiabetesAssessment.objects.filter(UserId_id=UserId)
-            Question = apps.get_model('user_assessment', 'QuestionDiabetesTableV2')
+            # Question = apps.get_model('user_assessment', 'QuestionDiabetesTableV2')
             if OpenhealthDiabetesAssessment.objects.filter(UserId_id=UserId):
-                x = Question.objects.all()
+                x = QuestionDiabetesTableV2.objects.all()
                 count = []
                 dq = GetQuestionDiabetesSerializer(x, many=True)
                 life = GetOpenhealthDiabetesSerializer(result, many=True)
@@ -58,7 +58,7 @@ class OpenHealthDiabetesByUserId(APIView):
                 return Response(json.loads(jsonStr), status=200)
 
             else:
-                x = Question.objects.all()
+                x = QuestionDiabetesTableV2.objects.all()
                 dq = GetQuestionDiabetesSerializer(x, many=True)
                 data= []
                 for i in dq.data:
@@ -71,7 +71,7 @@ class OpenHealthDiabetesByUserId(APIView):
                 response.HasError = False
                 jsonStr = json.dumps(response.__dict__)
                 return Response(json.loads(jsonStr), status=200)
-        except Question.DoesNotExist as e:
+        except QuestionDiabetesTableV2.DoesNotExist as e:
             response = GenericResponse("Message", "Resul t", "Status", "HasError")
             response.Message = Errormessage(e)
             response.Result = False

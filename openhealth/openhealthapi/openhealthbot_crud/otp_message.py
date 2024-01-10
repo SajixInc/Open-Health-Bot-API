@@ -41,14 +41,15 @@ class otp_genaration(generics.GenericAPIView):
 
             otp_model1.phone_number=phonenumber
             otp_model1.otp=GenerateOTP()
+            # print(otp_model1.otp,"kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk" )
             otp_model1.date_time = datetime.datetime.now()
             t1 = datetime.datetime.now() + timedelta(seconds=0, minutes=15, hours=0)
             user={}
-            print(t1)
+            print(t1,"kkkkkkkkkkkkkkkkkkkkk")
             if phonenumber == '+916309692221':
                 otp_model1.otp = '530003'
             expiry_on=otp_model1.expiry_on = t1
-            otp_message_sms(phonenumber=phonenumber,otp=otp_model1.otp)
+            # otp_message_sms(phonenumber=phonenumber,otp=otp_model1.otp)
 
 
             otp_model1.save()

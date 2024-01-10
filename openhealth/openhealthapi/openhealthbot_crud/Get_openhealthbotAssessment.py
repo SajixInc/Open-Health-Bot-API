@@ -25,9 +25,9 @@ class GetOpenhealthBotAssessmentView(generics.GenericAPIView):
         2.Table_Name: 'User_Depression_Assessment_table'
         3.Table_Name: 'User_Lifestyle_Assessment_table')"""
         try:
-            lifeQ = apps.get_model('user_assessment', 'QuestionLifestyleScoresTableV2')
-            depreQ = apps.get_model('user_assessment', 'QuestionDepressionTableV2')
-            DiaQ = apps.get_model('user_assessment', 'QuestionDiabetesTableV2')
+            # lifeQ = QuestionLifestyleScoresTableV2()
+            # depreQ = QuestionDepressionTableV2()
+            # DiaQ = QuestionDiabetesTableV2()
             diab=0
             depres=0
             lifeee=0
@@ -39,26 +39,31 @@ class GetOpenhealthBotAssessmentView(generics.GenericAPIView):
                 print(depres)
             for j in Diintration:
                 diab = j.InteractionId
+                print(diab,"diab")
             for k in lifeintration:
                 lifeee = k.InteractionId
-                print(lifeee)
+                print(lifeee,"lifeee")
             print(lifeee,depres,diab)
             result1 = OpenhealthDiabetesAssessment.objects.filter(UserId_id=UserId,Category="Diabetes",FamilyId=None,InteractionId=diab)
-            result2 = DiaQ.objects.filter(Category="Diabetes")
+            # print(result1,"result1")
+            result2 = QuestionDiabetesTableV2.objects.filter(Category="Diabetes")
             Diabetes = GetOpenhealthDiabetesSerializer(result1,many=True)
+            # print(Diabetes,"diaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
             Diabetes1=GetQuestionDiabetesSerializer(result2,many=True)
             result3 = OpenhealthDepressionAssessment.objects.filter(UserId_id=UserId,Category="Depression",FamilyId=None,InteractionId=depres)
-            result4 = depreQ.objects.filter(Category="Depression")
+            result4 = QuestionDepressionTableV2.objects.filter(Category="Depression")
             Depression = GetOpenhealthDepressionSerializer(result3, many=True)
             Depression1 = GetQuestionDepressionSerializer(result4, many=True)
             result5 = OpenhealthLifestyleAssessment.objects.filter(UserId=UserId,Category="Lifestyle",FamilyId=None,InteractionId=lifeee)
-            result6 = lifeQ.objects.filter(Category="lifestyle scoring")
+            result6 = QuestionLifestyleScoresTableV2.objects.filter(Category="lifestyle scoring")
             Lifestyle = GetOpenHealthLifestyleScoringSerializer(result5, many=True)
             Lifestyle1 = GetQuestionLifestyleSerializer(result6, many=True)
             ss=int(len(Diabetes1.data))
+            print(ss,"sssssssssssssssssssss")
             ss1=int(len(Depression1.data))
             lifestylelen=len(Lifestyle1.data)
             rr = len(Diabetes.data)
+            print(rr,"rrrrrrrrrrrrrrrrrrrr")
             rr1 = len(Depression.data)
             lifestyleQn=len(Lifestyle.data)
             life = {}

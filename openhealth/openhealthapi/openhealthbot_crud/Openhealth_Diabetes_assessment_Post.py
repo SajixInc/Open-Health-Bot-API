@@ -6,7 +6,7 @@ from genericresponse import GenericResponse
 from ..serializers import OpenHealthDiabetesSerializer,GetOpenhealthDiabetesSerializer
 from errormessage import Errormessage
 
-from ..models import OpenhealthInteractionModel, OpenhealthDiabetesAssessment
+from ..models import OpenhealthInteractionModel, OpenhealthDiabetesAssessment,QuestionDiabetesTableV2
 # from user_assessment.models import QuestionLifestyleScoresTableV2
 import logging, traceback
 
@@ -23,10 +23,10 @@ class OpenHealthDiabetesPostAPI(generics.GenericAPIView):
         (Table_Name:'Openhealth_Diabetes_Assessment_table')"""
         try:
             question = request.data.get('QuestionId')
-            QuestionDiabetesTable = apps.get_model('user_assessment', 'QuestionDiabetesTableV2')
+            # QuestionDiabetesTable = apps.get_model('user_assessment', 'QuestionDiabetesTableV2')
             Interactionid = request.data.get('InteractionId')
             Category=request.data.get('Category')
-            data = QuestionDiabetesTable.objects.get(id=question)
+            data = QuestionDiabetesTableV2.objects.get(id=question)
             sub_category=data.Sub_category
             if Category == sub_category:
                 userid = request.data.get('UserId')
