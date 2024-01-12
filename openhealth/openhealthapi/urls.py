@@ -29,4 +29,5 @@ urlpatterns =[
     path('GetAllQuestionsLifeStyleScoringV2/',GetAllQuestionsLifeStyleScoringV2.as_view(), name='GetAllQuestionsLifeStyleScoringV2'),
     path('GetAllQuestionsDepressionV2/',GetAllQuestionsDepressionV2.as_view(), name='GetAllQuestionsDepressionV2'),
     path('GetAllQuestionsDiabetesV2/',GetAllQuestionsDiabetesV2.as_view(), name='GetAllQuestionsDiabetesV2'),
+    path('getidwithmobilenumber/',getidwithmobilenumber.as_view(), name='getidwithmobilenumber'),
 ]

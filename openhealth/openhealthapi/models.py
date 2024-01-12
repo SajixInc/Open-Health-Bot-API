@@ -76,10 +76,10 @@ Category = (
 # Create your models here.
 
 class otp_model(models.Model):
-    otp = models.CharField(max_length=10)
-    phone_number = models.CharField(max_length=100, unique=True)
-    date_time = models.DateTimeField()
-    expiry_on = models.DateTimeField()
+    # otp = models.CharField(max_length=10)
+    phone_number = models.CharField(max_length=100)
+    # date_time = models.DateTimeField()
+    # expiry_on = models.DateTimeField()
 
     class Meta:
         db_table = 'bot_otp_table'
