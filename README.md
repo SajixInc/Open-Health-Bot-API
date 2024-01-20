@@ -147,3 +147,7 @@ Run
 
 ### These API's can be used along with the [Open Health Bot](https://github.com/vivifyhealthcare/Open-Health-Bot)
 
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/73a66dc8e360799210d5/maintainability)](https://codeclimate.com/github/vivifyhealthcare/Open-Health-Bot-API/maintainability)
+
+
