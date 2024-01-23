@@ -14,13 +14,18 @@ class botdemographicserializer(serializers.ModelSerializer):
 class bototpserializer(serializers.ModelSerializer):
     class Meta:
         model = otp_model
-        fields = "phone_number",
+        fields = "id","phone_number",
 
+
+class nootpmobileserializer(serializers.ModelSerializer):
+    class Meta:
+        model = otp_model
+        fields = "id","phone_number",
 
 class bototpvalidationserializer(serializers.ModelSerializer):
     class Meta:
         model = otp_model
-        fields = "id","otp"
+        fields = "id",
 
 class BotcowinSerializers(serializers.Serializer):
     # center_id = serializers.IntegerField()

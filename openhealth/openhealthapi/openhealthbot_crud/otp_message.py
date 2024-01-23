@@ -38,6 +38,7 @@ class otp_genaration(generics.GenericAPIView):
         try:
             phonenumber=request.data.get('phone_number')
             otp_model1 = otp_model()
+            print(otp_model1,"asdfgh")
 
             otp_model1.phone_number=phonenumber
             otp_model1.otp=GenerateOTP()
@@ -62,6 +63,7 @@ class otp_genaration(generics.GenericAPIView):
             response.HasError = False
             jsonStr = json.dumps(response.__dict__)
             return Response(json.loads(jsonStr), status=200)
+            
         except Exception as e:
             response = GenericResponse("message", "result", "status", "has_error")
             response.Message = Errormessage(e)

@@ -22,6 +22,7 @@ from .openhealthbot_crud.Get_openhealthbotAssessment import GetOpenhealthBotAsse
 from .openhealthbot_crud.life_style_questions import GetAllQuestionsLifeStyleScoringV2
 from .openhealthbot_crud.get_all_questions_diabetes import GetAllQuestionsDiabetesV2
 from .openhealthbot_crud.get_all_questions_depression import GetAllQuestionsDepressionV2
+from .openhealthbot_crud.No_otp_mobilenumber import getidwithmobilenumber
 
 # Create your views here.
 otp_genaration()
@@ -47,3 +48,4 @@ GetOpenhealthBotAssessmentView()
 GetAllQuestionsLifeStyleScoringV2()
 GetAllQuestionsDiabetesV2()
 GetAllQuestionsDepressionV2()
+getidwithmobilenumber()
